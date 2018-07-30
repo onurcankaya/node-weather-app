@@ -3,6 +3,7 @@
     "@rise-digital/eslint-config-rise": "^2.2.1",
     "eslint": "4.19.1",
     "prettier": "^1.13.7",
-    "request": "2.73.0"
+    "request": "2.73.0",
+    "yargs": "4.8.1"
   }
 }
