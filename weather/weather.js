@@ -1,5 +1,5 @@
 const request = require('request')
-const apiKey = require('../api-key')
+const keys = require('../config/keys')
 
 const convertFahrenheitToCelcius = (f) => {
   return ((f - 32) * 5) / 9
@@ -8,7 +8,7 @@ const convertFahrenheitToCelcius = (f) => {
 const getWeather = (lat, long, callback) => {
   request(
     {
-      url: `https://api.darksky.net/forecast/${apiKey.apiKey()}/${lat},${long}`,
+      url: `https://api.darksky.net/forecast/${keys.apiKey}/${lat},${long}`,
       json: true,
     },
     (error, body, response) => {
